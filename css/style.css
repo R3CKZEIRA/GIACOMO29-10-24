@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Estilos do header */
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #000000;
+    color: #fff;
+    position: fixed;
+    top:0;
+  }
+  
+  header a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+   
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Checkbox para controlar a visibilidade do menu */
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+  /* Ícone do menu */
+  label {
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+  }
+  
+  h3 {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  /* divisao de config de artigos */
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  article img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    margin:0 auto;
+  }
+  
+  article p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+  }
+
+  /* fim da divisao */
+  
+
+  @media (max-width: 768px) {
+                                    /* parte responsável pela responsividade */
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    article {
+        width: 100%;
+        max-width: 400px;
+    }
+  
+    /* Menu mobile */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+        display: none;
+    }
+  
+    /* icon menu */
+    label {
+        display: block;
+        color: #fff;
+    }
+  
+    /* Exibe o menu quando o checkbox está marcado */
+    input[type="checkbox"]:checked + label + nav ul {
+        display: flex;
+    }
+  
+    /* Estilo dos itens do menu no mobile */
+    nav ul li {
+        margin: 10px 0;
+    }
+  }
+  
