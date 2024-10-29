@@ -14,7 +14,7 @@
   
   /* Estilos do header */
   header {
-    width: 100%;
+    width: 100%;          
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,12 +43,12 @@
     text-decoration: none;
   }
   
-  /* Checkbox para controlar a visibilidade do menu */
+  /* controle visual do menu */
   input[type="checkbox"] {
     display: none;
   }
   
-  /* Ícone do menu */
+  /* icon do menu */
   label {
     font-size: 1.5rem;
     cursor: pointer;
@@ -57,7 +57,7 @@
   
   h3 {
     text-align: center;
-    margin: 50px 0;
+    margin: 50px 0;       /*só pra alinhar*/ 
     font-size: 1.5rem;
     color: #333;
   }
@@ -102,7 +102,7 @@
   @media (max-width: 768px) {
                                     /* parte responsável pela responsividade */
     section {
-        flex-direction: column;
+        flex-direction: column; /*seção das imgs*/
         align-items: center;
     }
   
@@ -111,7 +111,7 @@
         max-width: 400px;
     }
   
-    /* Menu mobile */
+    /* menu menor tela */
     nav ul {
         flex-direction: column;
         align-items: center;
@@ -130,12 +130,12 @@
         color: #fff;
     }
   
-    /* Exibe o menu quando o checkbox está marcado */
+    /* menu usando checkbox */
     input[type="checkbox"]:checked + label + nav ul {
         display: flex;
     }
   
-    /* Estilo dos itens do menu no mobile */
+    /* margem de telas menores */
     nav ul li {
         margin: 10px 0;
     }
